@@ -7,7 +7,8 @@ Aplicación **gratuita** para **Android** que permite gestionar invitados, envia
 **Plataforma:** solo Android  
 **Licencia de uso:** gratuita (código abierto en este repositorio)
 
-Repositorio: [https://github.com/antonioavezon/control-de-acceso-pmi](https://github.com/antonioavezon/control-de-acceso-pmi)
+Repositorio: [https://github.com/antonioavezon/control-de-acceso-pmi](https://github.com/antonioavezon/control-de-acceso-pmi)  
+**Descargar APK:** [Release v2.3](https://github.com/antonioavezon/control-de-acceso-pmi/releases/tag/v2.3)
 
 ---
 
@@ -70,15 +71,24 @@ Flujo típico del evento:
 
 ## Instalación con el APK
 
-1. Compila un APK release (ver más abajo) o usa el APK que generes localmente.
-2. Copia el archivo `.apk` al teléfono (por ejemplo a **Descargas**).
+**Descarga el instalador desde Releases (recomendado):**
+
+- **Release v2.3:** [https://github.com/antonioavezon/control-de-acceso-pmi/releases/tag/v2.3](https://github.com/antonioavezon/control-de-acceso-pmi/releases/tag/v2.3)
+- **APK directo:** [ControlAccesoPMI-v2.3.apk](https://github.com/antonioavezon/control-de-acceso-pmi/releases/download/v2.3/ControlAccesoPMI-v2.3.apk)
+- **Última versión publicada:** [https://github.com/antonioavezon/control-de-acceso-pmi/releases/latest](https://github.com/antonioavezon/control-de-acceso-pmi/releases/latest)
+
+### Pasos de instalación
+1. Descarga **`ControlAccesoPMI-v2.3.apk`** desde el release.
+2. Cópialo al teléfono (por ejemplo a **Descargas**).
 3. En Android, permite instalar apps de fuentes desconocidas / del administrador de archivos.
 4. Abre el APK e instálalo.
 5. Abre **Control de acceso PMI**.
 
-> Nota: este repositorio **no incluye** el APK firmado ni el keystore (por seguridad). Debes generarlos en tu entorno.
+> El APK se distribuye por **GitHub Releases**. No se guarda dentro del código del repositorio (buena práctica). El keystore de firma tampoco se publica.
 
 ### Generar el APK (desarrollo)
+
+Si quieres compilarlo tú mismo:
 
 Requisitos aproximados:
 - JDK 17 o 21
@@ -106,7 +116,7 @@ En el repositorio encontrarás **solo ejemplos** (con datos ficticios):
 
 | Archivo de ejemplo en el repo | Nombre real requerido |
 |---|---|
-| [`examples/invitados.example.csv`](examples/invitados.example.csv) | **`invitados-demo.csv`** |
+| [`examples/invitados.example.csv`](examples/invitados.example.csv) | **`invitados.csv`** |
 | [`examples/email.example.txt`](examples/email.example.txt) | **`email.txt`** |
 
 ### Importante: renombrar antes de usar
@@ -159,7 +169,8 @@ PMI le invita a participar en un Encuentro de Voluntarios...
 
 - La app trabaja **offline** (lista, QR, asistencia y exportación en el dispositivo).
 - El envío de correo usa el **cliente de correo del teléfono**; no hay servidor propio de la app.
-- Este repositorio **no incluye** archivos con datos personales reales (`email.txt`, `invitados.csv`, APK firmados ni keystores).
+- Este repositorio **no incluye** en el código fuente archivos con datos personales reales (`email.txt`, `invitados.csv`) ni el keystore.
+- El APK instalable se publica en **GitHub Releases**, no dentro del árbol del proyecto.
 - Los ejemplos de este README usan datos ficticios.
 
 ---
