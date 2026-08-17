@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ControlAcceso PMI</string>
+
+    <string name="welcome_credit_by">Programa diseñado y construido por</string>
+    <string name="welcome_author_name">Antonio Avezon</string>
+    <string name="welcome_author_role">Analista de experiencia, desarrollo y soluciones informáticas del voluntariado</string>
+    <string name="welcome_continue">Continuar</string>
+    <string name="welcome_version">Versión %1$s Año 2026</string>
+
+    <string name="home_title">Control de acceso PMI</string>
+    <string name="home_subtitle">Seleccione un modo de operación</string>
+    <string name="mode_invitations">1. Enviar invitaciones</string>
+    <string name="mode_access">2. Control de acceso</string>
+    <string name="mode_summary">3. Resumen del evento</string>
+    <string name="load_guest_list">Cargar lista de participantes</string>
+    <string name="load_email_template">Cargar Email</string>
+    <string name="view_participants">Ver lista de participantes</string>
+    <string name="participants_title">Lista de participantes</string>
+    <string name="no_guest_list">Sin lista cargada</string>
+    <string name="guests_loaded">%1$d participantes cargados</string>
+    <string name="email_template_default">Plantilla de correo: texto genérico</string>
+    <string name="email_template_loaded">Plantilla de correo: archivo cargado</string>
+    <string name="email_template_loaded_ok">Archivo de correo cargado correctamente.</string>
+    <string name="email_file_not_found">No se encontró el archivo de correo.</string>
+    <string name="email_read_error">No fue posible leer el archivo de correo seleccionado.</string>
+    <string name="expected_csv_format">Formato: NOMBRE | APELLIDOS | PMIID | EMAIL</string>
+    <string name="expected_email_format">email.txt: primera línea = asunto; el resto = cuerpo del correo.</string>
+
+    <string name="camera_permission_title">Permiso de cámara requerido</string>
+    <string name="camera_permission_message">Esta app necesita la cámara para escanear el código QR de acceso del participante.</string>
+    <string name="camera_permission_retry">Reintentar</string>
+    <string name="camera_permission_settings">Abrir Ajustes</string>
+    <string name="camera_permission_denied_permanent">El permiso de cámara fue denegado permanentemente. Habilítalo en Ajustes para continuar.</string>
+
+    <string name="access_title">Control de acceso</string>
+    <string name="pmi_detected">PMI ID: %1$s</string>
+    <string name="entries_counter">Asistentes: %1$d / Invitados: %2$d</string>
+    <string name="status_permitido">PERMITIDO</string>
+    <string name="status_no_permitido">NO PERMITIDO</string>
+    <string name="status_reingreso">Participante ya registrado</string>
+    <string name="back_home">Volver al inicio</string>
+
+    <string name="invites_title">Enviar invitaciones</string>
+    <string name="send_invitation">Enviar invitación</string>
+    <string name="invite_all">Invitar a todos</string>
+    <string name="invite_all_confirm_title">Invitar a todos</string>
+    <string name="invite_all_confirm_message">Se preparará una invitación con QR personal para cada participante (%1$d). El cliente de correo se abrirá de uno en uno.</string>
+    <string name="invite_all_progress">Preparando invitación %1$d de %2$d</string>
+    <string name="invite_all_done">Proceso de invitaciones finalizado.</string>
+    <string name="invite_all_partial">Se omitieron %1$d invitaciones por datos incompletos o errores. El resto se preparó correctamente.</string>
+    <string name="invite_sent_hint">Se abrirá el cliente de correo con la invitación y el QR adjunto. Si no hay archivo de correo, se usará un texto genérico.</string>
+    <string name="no_participants_for_invites">No hay participantes cargados. Cargue la lista desde el inicio.</string>
+    <string name="regresar">Regresar</string>
+    <string name="invite_prepare_error">No fue posible preparar la invitación.</string>
+    <string name="invite_email_error">No fue posible abrir el cliente de correo.</string>
+    <string name="invite_missing_data">Faltan datos obligatorios (nombre, email o PMI ID).</string>
+
+    <string name="summary_title">Resumen del evento</string>
+    <string name="summary_invited">Total invitados: %1$d</string>
+    <string name="summary_attended">Asistentes únicos: %1$d</string>
+    <string name="summary_pending">Aún no ingresan: %1$d</string>
+    <string name="summary_exported_yes">Resumen exportado: Sí</string>
+    <string name="summary_exported_no">Resumen exportado: No</string>
+    <string name="no_entries">No hay asistentes registrados.</string>
+    <string name="export_entries_csv">Descargar resumen (.csv)</string>
+    <string name="download_list">Descargar resumen</string>
+    <string name="export_entries_success">Archivo CSV guardado correctamente.</string>
+    <string name="export_entries_error">No se pudo guardar el archivo CSV.</string>
+    <string name="delete_data">Eliminar datos</string>
+    <string name="delete_data_blocked">No es posible eliminar los datos del evento porque aún no se ha descargado el resumen de asistencia.</string>
+    <string name="delete_data_title">Eliminar datos del evento</string>
+    <string name="delete_data_message">Esta acción eliminará los participantes y registros almacenados en la base de datos de este evento.\n\nLos archivos de resumen que ya fueron descargados NO serán eliminados.</string>
+    <string name="delete_data_confirm">ELIMINAR DATOS</string>
+    <string name="delete_data_success">Los datos del evento fueron eliminados correctamente.</string>
+    <string name="cancel">CANCELAR</string>
+    <string name="ok">Aceptar</string>
+
+    <string name="reload_list_warning_title">Reemplazar lista de participantes</string>
+    <string name="reload_list_warning_message">Esta acción reemplazará la lista actual y borrará los ingresos ya registrados en la base de datos.\n\nLos archivos CSV exportados previamente NO se eliminarán.</string>
+    <string name="reload_list_confirm">Reemplazar lista</string>
+    <string name="csv_file_not_found">No se encontró el archivo de participantes.</string>
+    <string name="csv_read_error">No fue posible leer el archivo seleccionado.</string>
+    <string name="csv_reload_error">No se pudo leer el archivo. Puede haber sido movido o eliminado.</string>
+    <string name="need_guest_list">Debe cargar la lista de participantes antes de continuar.</string>
+</resources>

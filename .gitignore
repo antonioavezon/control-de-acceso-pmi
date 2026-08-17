@@ -1,0 +1,29 @@
+*.iml
+.gradle/
+.kotlin/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+
+# Binarios y firma (privados)
+*.apk
+*.aab
+*.jks
+*.keystore
+keystore.properties
+
+# Datos personales / plantillas reales (no subir)
+email.txt
+invitados.csv
+invitados-demo.csv
+**/invitados-demo.csv
+**/email.txt
+
+# Salidas de empaquetado
+app/release/
+**/outputs/apk/
