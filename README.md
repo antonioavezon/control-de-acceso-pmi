@@ -15,13 +15,14 @@ Repositorio: [https://github.com/antonioavezon/control-de-acceso-pmi](https://gi
 
 Flujo típico del evento:
 
-1. Cargar lista de participantes  
-2. (Opcional) Cargar plantilla de correo  
-3. Enviar invitaciones con QR  
-4. Controlar acceso escaneando el QR  
-5. Consultar resumen de asistencia  
-6. Descargar el resumen CSV  
-7. Eliminar los datos del evento en la app (sin borrar el archivo ya descargado)
+1. Preparar y **renombrar** los archivos a **`invitados.csv`** y **`email.txt`**  
+2. Cargar lista de participantes  
+3. (Opcional) Cargar plantilla de correo  
+4. Enviar invitaciones con QR  
+5. Controlar acceso escaneando el QR  
+6. Consultar resumen de asistencia  
+7. Descargar el resumen CSV  
+8. Eliminar los datos del evento en la app (sin borrar el archivo ya descargado)
 
 ---
 
@@ -101,13 +102,27 @@ Para firmar en release, copia `keystore.properties.example` a `keystore.properti
 
 ## Archivos necesarios para usar la app
 
-Coloca estos archivos en el teléfono (recomendado: carpeta **Descargas**) y cárgalos desde la app.
+En el repositorio encontrarás **solo ejemplos** (con datos ficticios):
 
-### 1) Lista de participantes
+| Archivo de ejemplo en el repo | Nombre real requerido |
+|---|---|
+| [`examples/invitados.example.csv`](examples/invitados.example.csv) | **`invitados.csv`** |
+| [`examples/email.example.txt`](examples/email.example.txt) | **`email.txt`** |
 
-Ejemplo incluido en el repo:
+### Importante: renombrar antes de usar
 
-[`examples/invitados.example.csv`](examples/invitados.example.csv)
+**Los archivos de ejemplo NO se usan con ese nombre.**  
+**Debes cambiar el nombre de estos archivos a los nombres reales esperados para que la app los pueda reconocer y usarlos:**
+
+- **`invitados.example.csv` → `invitados.csv`**
+- **`email.example.txt` → `email.txt`**
+
+**El nombre de los archivos es fundamental.**  
+Después de renombrarlos, colócalos en el teléfono (recomendado: carpeta **Descargas**) y cárgalos desde la app con **Cargar lista de participantes** y **Cargar Email**.
+
+### 1) Lista de participantes — archivo final: **`invitados.csv`**
+
+Contenido de ejemplo (datos ficticios):
 
 ```text
 NOMBRE | APELLIDOS | PMIID | EMAIL
@@ -122,11 +137,9 @@ Reglas:
 - Sin PMI ID duplicados
 - Email con formato válido
 
-### 2) Plantilla de correo (opcional)
+### 2) Plantilla de correo — archivo final: **`email.txt`** (opcional)
 
-Ejemplo incluido en el repo:
-
-[`examples/email.example.txt`](examples/email.example.txt)
+Contenido de ejemplo:
 
 ```text
 Invitación – Encuentro de Voluntarios PMI | 5 de septiembre de 2026
@@ -138,6 +151,7 @@ PMI le invita a participar en un Encuentro de Voluntarios...
 - Línea 1 = asunto  
 - Líneas siguientes = cuerpo  
 - Se respetan saltos de línea del archivo  
+- Si no cargas **`email.txt`**, la app usará un texto genérico  
 
 ---
 
