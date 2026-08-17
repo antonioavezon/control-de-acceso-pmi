@@ -106,7 +106,7 @@ En el repositorio encontrarás **solo ejemplos** (con datos ficticios):
 
 | Archivo de ejemplo en el repo | Nombre real requerido |
 |---|---|
-| [`examples/invitados.example.csv`](examples/invitados.example.csv) | **`invitados.csv`** |
+| [`examples/invitados.example.csv`](examples/invitados.example.csv) | **`invitados-demo.csv`** |
 | [`examples/email.example.txt`](examples/email.example.txt) | **`email.txt`** |
 
 ### Importante: renombrar antes de usar
